@@ -1,0 +1,28 @@
+<mat-card class="container">
+  <mat-card-header>
+    <mat-card-title> Listar Jogos </mat-card-title>
+  </mat-card-header>
+  <mat-card-content> 
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Seleção A</th>
+        <th></th>
+        <th>Placar</th>
+        <th></th>
+        <th>Seleção B</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let jogo of jogos">
+        <td>{{jogo.id}}</td>
+        <td>{{jogo.selecaoA?.nome}}</td>
+        <td>{{jogo.golsTimeA}}</td>
+        <td>X</td>
+        <td>{{jogo.golsTimeB}}</td>
+        <td>{{jogo.selecaoA?.nome}}</td>
+      </tr>
+    </table>  
+  </mat-card-content>
+</mat-card>
+
+<p>Caro professor, não consegui realizar o listar por completo. Mas, o método está no componente, não sei o que houve e testando a aplicação no swagger do ASP.net, os valores de nome e id retornam null. Não consegui entender mesmo.</p>
